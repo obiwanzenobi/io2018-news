@@ -2,8 +2,8 @@
 
 ### Omówienie nowości z zakresu developmentu oraz designu
 ---
-## Navigation
-# Próba uproszczenia zarządzania nawigacją i powiązanymi z nią zagadnieniami: |
+### Navigation
+#### Próba uproszczenia zarządzania nawigacją i powiązanymi z nią zagadnieniami: |
 -
 ---
 ## Work manager
