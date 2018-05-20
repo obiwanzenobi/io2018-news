@@ -4,7 +4,22 @@
 ---
 ### Android Jetpack oraz AndroidX
 ![jetpack](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkXbAiokYlzUZ7JfGTs4zFc_bqx6MzxPe_KAbJHtxo_p9IUvk0)
-
++++
+### Co to?
+- Android jetpack to zbiór bibliotek, narzędzi oraz poradników, które mają być bazą do budowania nowoczesnych aplikacji. |
+- AndroidX to zestaw podstawowych bibliotek, a także nowa przestrzeń nazw dla komponentów dostarczanych poza platformą. |
+- Całość składa sie na nową inicjatywe Google, dotyczącą uporządkowania dostarczanych narzędzi.
++++
+### Co się zmieni?
+- Znikną prefixy v4, v7, v13 itd. |
+- Duże biblioteki zostaną podzielone na mniejsze (np. view pager) |
+- Numerowanie wersji zostanie przywrócone z 28.0.0 do 1.0.0 (kompatybilność, feature, bugfix) |
+- 28.0.0 będzie ostatnią wersją w starej konwencji |
++++
+### Migracja
+- Android studio Refactor (3.2 preview 14+) |
+- Jetifier (dla zewnętrznych zależności w .aar oraz .jar) |
+---
 ### Navigation
 +++
 ### Cel? Próba uproszczenia zarządzania nawigacją i powiązanymi z nią zagadnieniami: 
@@ -48,7 +63,16 @@
 @[2-3]
 @[5-8]
 @[10-11]
-
++++ 
+### Code behind
+```kotlin
+         workManagerButton.setOnClickListener(
+                Navigation.createNavigateOnClickListener(R.id.action_mainFragment_to_workManagerFragment)
+        )
+        navigationbutton.setOnClickListener { 
+            navigationbutton.findNavController().navigate(R.id.navigationFragment)
+        }
+```
 ---
 ## Work manager
 +++
@@ -78,17 +102,46 @@
 - FirebaseJobDispatcher |
 - Evernote Android Job |
 - Ygit's Android Priority Jobqueue |
+---
+### Paging Library
+- Umożliwia efektywne przedstawienie danych w RecyclerView z wykorzystaniem paginacji |
+- Wymusza zdefiniowanie jednego lub więcej źródła danych (lokalnego lub zdalnego)|
+- Pozwala na ustawienie prefetch'a oraz niestandardowej wielkości pierwszej parti danych |
+- Udostępnia mechanizm łączenia danych lokalnych oraz tych z sieci w jedno wyjściowe źródło dla aplikacji |
++++
+### Placeholders
+- Aby skorzystać źródło danych musi udostępniać całkowitą liczbe elementów a wysokość każdego wiersza musi być stała |
+- Użytkownik może przewinąć listę w miejsce gdzie jeszcze nie ma danych i zostaną one automatycznie doładowane |
+- Zwalnia nas to z obowiązku wykorzystania widoków-loaderów |
+---
+### Slices i Actions
+![slices](https://developer.android.com/guide/slices/images/slices-landing-example-3.png)
+![actions](/images/actions.png)
++++ 
+### Slices
+- Interaktywne zdalne widoki, które umożliwiają użytkownikowi interakcje z elementami aplikacji z poziomu systemu |
+- Poczatkowo będą dostępne z poziomu Google Search |
+-
 
 ---
-### Where is the magic?
+### ML kit
+---
+### Co jeszcze?
 ![magic1](/assets/wizardMagic1.jpg)
-
-+++?code=sample/java/Hello.java&lang=java&title=Dagger Hello world 
-@[1-14](Basic module with unscoped provider.)
-@[16-20](Component with just a single inject.)
-@[22-34](Application with component initialization)
-@[45-56](Activity inject.)
-
++++
+### Data Binding v2
+- Umożliwia połączenie z LiveData |
+- Od teraz kompiluje się (częściowo) inkrementacyjnie |
+- Współpracuje z Instant Apps |
++++
+### Room
+- Równoczesny (oraz szybszy) dostęp wielu wątków (AheadTimeLogging dla Androida 4.3+ jeśli nie ma ograniczonej pamięci) |
+- @RawQuery - dynamiczne zapytania przyjmujące SQL query zwracające zmapowane obiekty (wcześniej jedyną opcją był cursor) |
++++
+### Oraz
+- RecyclerView selection - zaznaczanie |
+- RecyclerView ListAdapter |
+- androidx.webkit.* wraz z Safe Browsing (Webview) |
 ---
 
 ## Look deeper
