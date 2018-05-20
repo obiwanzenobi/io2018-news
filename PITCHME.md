@@ -2,6 +2,9 @@
 
 ### Omówienie nowości z zakresu developmentu oraz designu
 ---
+### Android Jetpack oraz AndroidX
+![jetpack](https://developer.android.com/static/images/jetpack/jetpack-hero.svg)
+
 ### Navigation
 +++
 ### Cel? Próba uproszczenia zarządzania nawigacją i powiązanymi z nią zagadnieniami: 
@@ -12,7 +15,10 @@
 - Transakcje fragmentów |
 - Animacje |
 +++
-### Navigation grap
+### Graficzna wizualizacja nawigacji
+![navGraph](/images/navGraphImg.png)
++++
+### Code behind
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <navigation ...
@@ -39,12 +45,16 @@
               tools:layout="@layout/fragment_ml_kit"/>
 </navigation>
 ```
+@[2-3]
+@[5-8]
+@[10-11]
+
 ---
 ## Work manager
 +++
 ### Wrapper dla kontrolerów wykonujących zadania w tle
-- Gwarantuje wykonanie podczas określonych warunków startowych (połączenie z siecią, ładowanie, itp.) |
-- Nie narusza ograniczeń platformy dotyczących wykonywania zadań w tle (doze mode, battery optimization itp.)
+- Gwarantuje wykonanie podczas określonych warunków startowych |
+- Nie narusza ograniczeń platformy dotyczących wykonywania zadań w tle |
 - Kompatybilnie wstecznie także z urządzeniami bez Google Play Services |
 - Pozwala na łączenie oraz grupowanie zadań |
 - Umożliwia obserwowanie stanu wykonywania zadania (LiveData) |
