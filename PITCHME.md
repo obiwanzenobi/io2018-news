@@ -3,7 +3,7 @@
 ### Omówienie nowości z zakresu developmentu oraz designu
 ---
 ### Android Jetpack oraz AndroidX
-![jetpack](https://developer.android.com/static/images/jetpack/jetpack-hero.svg)
+![jetpack](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkXbAiokYlzUZ7JfGTs4zFc_bqx6MzxPe_KAbJHtxo_p9IUvk0)
 
 ### Navigation
 +++
