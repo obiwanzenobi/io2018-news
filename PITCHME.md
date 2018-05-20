@@ -155,10 +155,15 @@
 - Równoczesny (oraz szybszy) dostęp wielu wątków (AheadTimeLogging dla Androida 4.3+ jeśli nie ma ograniczonej pamięci) |
 - @RawQuery - dynamiczne zapytania przyjmujące SQL query zwracające zmapowane obiekty (wcześniej jedyną opcją był cursor) |
 +++
+### Lifecycle
+- Wydzielenie cyklu życia widoku fragmentu |
+- ! |
++++
 ### Oraz
 - RecyclerView selection - zaznaczanie |
 - RecyclerView ListAdapter |
 - androidx.webkit.* wraz z Safe Browsing (Webview) |
+- Zbiór kotlin extensions dla kodu platformowego Android KTX
 ---
 
 ## Look deeper
