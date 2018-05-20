@@ -15,39 +15,60 @@
 ### Navigation grap
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<navigation xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:tools="http://schemas.android.com/tools"
+<navigation ...
             app:startDestination="@id/mainFragment">
 
     <fragment android:id="@+id/mainFragment"
               android:name="com.lightmobile.io2018_demo.ui.main.MainFragment"
               android:label="main_fragment"
               tools:layout="@layout/main_fragment">
+            
         <action android:id="@+id/action_mainFragment_to_navigationFragment"
                 app:destination="@id/navigationFragment"/>
-        <action android:id="@+id/action_mainFragment_to_mlKitFragment"
-                app:destination="@id/mlKitFragment"/>
+        ...
     </fragment>
-    
-    <fragment android:id="@+id/mlKitFragment"
-              android:name="com.lightmobile.io2018_demo.ui.mlkit.MlKitFragment"
-              android:label="fragment_ml_kit"
-              tools:layout="@layout/fragment_ml_kit"/>
-    
+            
     <fragment android:id="@+id/navigationFragment"
               android:name="com.lightmobile.io2018_demo.ui.navigation.NavigationFragment"
               android:label="fragment_navigation"
               tools:layout="@layout/fragment_navigation"/>
+            
+    <fragment android:id="@+id/mlKitFragment"
+              android:name="com.lightmobile.io2018_demo.ui.mlkit.MlKitFragment"
+              android:label="fragment_ml_kit"
+              tools:layout="@layout/fragment_ml_kit"/>
 </navigation>
 ```
 ---
 ## Work manager
-- Gwarantuje wykonanie  |
-- based on JSR330 |
-- uses code generation |
-- compile-time checks |
-- components instead of Object graph |
++++
+## Wrapper dla kontrolerów wykonujących zadania w tle
+- Gwarantuje wykonanie podczas określonych warunków startowych (połączenie z siecią, ładowanie, itp.) |
+- Nie narusza ograniczeń platformy dotyczących wykonywania zadań w tle (doze mode, battery optimization itp.)
+- Kompatybilnie wstecznie także z urządzeniami bez Google Play Services |
+- Pozwala na łączenie oraz grupowanie zadań |
+- Umożliwia obserwowanie stanu wykonywania zadania (LiveData) |
+- Pozwala określić czy zależy nam na jednorazowym lub okresowym wywoływaniu |
++++
+## Przekazywanie parametrów pomiędzy zadaniami
+- Możliwe ustawienie parametrów wejściowych oraz wyjściowych w jednym łańcuchu |
+- Dane są przekazywane w formie mapy gdzie kluczem jest wartość tekstowa a wartościami typy proste, tablice oraz łańcuchy znaków |
+- Wartości są serializowane z górnym limitem 10KB. |
++++
+## Tagi oraz zadanie "Unikalne"
+- Istnieje możliwość przypisania jednego lub wiecej tagów podczas inicjalizacji |
+- Pozwala na określenie logiki postępowania w przypadku kolejnych zadań w obrębie jednego tagu: |
+-- "KEEP" anuluje zadanie gdy inne z tą samą nazwą jeszcze się nie zakończyło. Użyteczne w synchronizacjach gdzie chcemy ograniczyć ilośc jednakowych zapytań itp.
+-- "REPLACE" zastępuje aktualnie wykonywane zadanie z tą samą nazwą. Do zastosowania przy aktualizacjach satusów gdzie tylko ostatnia wartość ma znaczenie
+-- "APPEND" ustawia zadania w kolejce z zachowaniem kolejności. (np. lista zakupów, playlista, itp.)
+
++++
+## Jednolite API zastępujące (oraz rozszerzające możliwości) :
+- JobScheduler |
+- FirebaseJobDispatcher |
+- Evernote Android Job |
+- Ygit's Android Priority Jobqueue |
+
 ---
 ## Where is the magic?
 ![magic1](/assets/wizardMagic1.jpg)
