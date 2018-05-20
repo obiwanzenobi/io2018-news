@@ -114,17 +114,34 @@
 - Użytkownik może przewinąć listę w miejsce gdzie jeszcze nie ma danych i zostaną one automatycznie doładowane |
 - Zwalnia nas to z obowiązku wykorzystania widoków-loaderów |
 ---
-### Slices i Actions
+### Slices
 ![slices](https://developer.android.com/guide/slices/images/slices-landing-example-3.png)
-![actions](/images/actions.png)
 +++ 
 ### Slices
 - Interaktywne zdalne widoki, które umożliwiają użytkownikowi interakcje z elementami aplikacji z poziomu systemu |
 - Poczatkowo będą dostępne z poziomu Google Search |
--
-
+- Dobierane na podstawie URI |
+- Aplikacja Slice Viewer do podglądu tworzonych Slice |
 ---
+### Integracja z asystentem (Actions)
+![actions](/images/actions.png)
++++
+### Actions
+- Aplikacja musi zarejestrować dostępność wykonania jednej z zdefiniowanych akcji podstawowych (PLAY_MUSIC, EDIT_PHOTO) |
+- System asystenta przetworzy wypowiedź użytkownika i dostarczy nam parametry potrzebne do wykonania akcji |
+- Dzięki warstwie pośredniej całość ma sprawiać wrażenie konwersacji |
+---
+
 ### ML kit
+#### Machine lerning dla (prawie) każdego
++++ 
+### Co udostępnia?
+![mlkit](/images/mlkit.png)
++++
+### Ograniczenia?
+- Używa Firebase |
+- Przetwarzanie w chmurze jest płatne (w przeciwieństwie do tego na urzadzeniu) |
+- Nie wszystkie opcje dostępne są offline |
 ---
 ### Co jeszcze?
 ![magic1](/assets/wizardMagic1.jpg)
