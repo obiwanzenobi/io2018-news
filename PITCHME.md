@@ -3,8 +3,44 @@
 ### Omówienie nowości z zakresu developmentu oraz designu
 ---
 ### Navigation
-#### Próba uproszczenia zarządzania nawigacją i powiązanymi z nią zagadnieniami: |
--
++++
+### Cel? Próba uproszczenia zarządzania nawigacją i powiązanymi z nią zagadnieniami: 
+- Deep linki |
+- Przekazywanie argumentów do ekranów |
+- "Backstack" czyli nawigacja wstecz oraz w "góre" |
+- Testowanie nawigacji |
+- Transakcje fragmentów |
+- Animacje |
++++
+### Navigation grap
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            app:startDestination="@id/mainFragment">
+
+    <fragment android:id="@+id/mainFragment"
+              android:name="com.lightmobile.io2018_demo.ui.main.MainFragment"
+              android:label="main_fragment"
+              tools:layout="@layout/main_fragment">
+        <action android:id="@+id/action_mainFragment_to_navigationFragment"
+                app:destination="@id/navigationFragment"/>
+        <action android:id="@+id/action_mainFragment_to_mlKitFragment"
+                app:destination="@id/mlKitFragment"/>
+    </fragment>
+    
+    <fragment android:id="@+id/mlKitFragment"
+              android:name="com.lightmobile.io2018_demo.ui.mlkit.MlKitFragment"
+              android:label="fragment_ml_kit"
+              tools:layout="@layout/fragment_ml_kit"/>
+    
+    <fragment android:id="@+id/navigationFragment"
+              android:name="com.lightmobile.io2018_demo.ui.navigation.NavigationFragment"
+              android:label="fragment_navigation"
+              tools:layout="@layout/fragment_navigation"/>
+</navigation>
+```
 ---
 ## Work manager
 - Gwarantuje wykonanie  |
