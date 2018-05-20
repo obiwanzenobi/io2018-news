@@ -42,7 +42,7 @@
 ---
 ## Work manager
 +++
-## Wrapper dla kontrolerów wykonujących zadania w tle
+### Wrapper dla kontrolerów wykonujących zadania w tle
 - Gwarantuje wykonanie podczas określonych warunków startowych (połączenie z siecią, ładowanie, itp.) |
 - Nie narusza ograniczeń platformy dotyczących wykonywania zadań w tle (doze mode, battery optimization itp.)
 - Kompatybilnie wstecznie także z urządzeniami bez Google Play Services |
@@ -50,12 +50,12 @@
 - Umożliwia obserwowanie stanu wykonywania zadania (LiveData) |
 - Pozwala określić czy zależy nam na jednorazowym lub okresowym wywoływaniu |
 +++
-## Przekazywanie parametrów pomiędzy zadaniami
+### Przekazywanie parametrów pomiędzy zadaniami
 - Możliwe ustawienie parametrów wejściowych oraz wyjściowych w jednym łańcuchu |
 - Dane są przekazywane w formie mapy gdzie kluczem jest wartość tekstowa a wartościami typy proste, tablice oraz łańcuchy znaków |
 - Wartości są serializowane z górnym limitem 10KB. |
 +++
-## Tagi oraz zadanie "Unikalne"
+### Tagi oraz zadanie "Unikalne"
 - Istnieje możliwość przypisania jednego lub wiecej tagów podczas inicjalizacji |
 - Pozwala na określenie logiki postępowania w przypadku kolejnych zadań w obrębie jednego tagu: |
 -- "KEEP" anuluje zadanie gdy inne z tą samą nazwą jeszcze się nie zakończyło. Użyteczne w synchronizacjach gdzie chcemy ograniczyć ilośc jednakowych zapytań itp.
@@ -63,14 +63,14 @@
 -- "APPEND" ustawia zadania w kolejce z zachowaniem kolejności. (np. lista zakupów, playlista, itp.)
 
 +++
-## Jednolite API zastępujące (oraz rozszerzające możliwości) :
+### Jednolite API zastępujące (oraz rozszerzające możliwości) :
 - JobScheduler |
 - FirebaseJobDispatcher |
 - Evernote Android Job |
 - Ygit's Android Priority Jobqueue |
 
 ---
-## Where is the magic?
+### Where is the magic?
 ![magic1](/assets/wizardMagic1.jpg)
 
 +++?code=sample/java/Hello.java&lang=java&title=Dagger Hello world 
