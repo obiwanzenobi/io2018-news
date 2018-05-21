@@ -1,7 +1,7 @@
 # Google I/O 2018
 
 ### Omówienie nowości z zakresu developmentu oraz designu
-![io](https://storage.googleapis.com/io-2018.appspot.com/v1/hashtag.gif)
+
 ---
 ### Android Jetpack oraz AndroidX
 ![jetpack](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkXbAiokYlzUZ7JfGTs4zFc_bqx6MzxPe_KAbJHtxo_p9IUvk0)
@@ -20,7 +20,7 @@
 ### Migracja
 - Android studio Refactor (3.2 preview 14+) |
 - Jetifier (dla zewnętrznych zależności w .aar oraz .jar) |
----
+---?image=https://56degreesnorthphotography.files.wordpress.com/2011/11/sign-adj.jpg&size=auto 70%
 ### Navigation
 +++
 ### Cel? Próba uproszczenia zarządzania nawigacją i powiązanymi z nią zagadnieniami: 
