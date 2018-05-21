@@ -8,7 +8,7 @@
 ### Co to?
 - Android jetpack to zbiór bibliotek, narzędzi oraz poradników, które mają być bazą do budowania nowoczesnych aplikacji. |
 - AndroidX to zestaw podstawowych bibliotek, a także nowa przestrzeń nazw dla komponentów dostarczanych poza platformą. |
-- Całość składa sie na nową inicjatywe Google, dotyczącą uporządkowania dostarczanych narzędzi.
+- Całość składa sie na nową inicjatywe Google, dotyczącą uporządkowania dostarczanych narzędzi. |
 +++
 ### Co się zmieni?
 - Znikną prefixy v4, v7, v13 itd. |
@@ -115,11 +115,12 @@
 - Zwalnia nas to z obowiązku wykorzystania widoków-loaderów |
 
 ---?image=https://material.io/design/assets/1j52aydOeI2nYsCBrPRkYpbHQRffAyg0D/casestudies-reply-main.png&size=auto 75%&position=center
-### Material Design 2.0
-
-+++
+### Nowości w Material Design
++++?image=https://material.io/design/assets/1331BmAsV6l543NIfc6_9cgbpQvVE4eel/casestudies-shrine-hero.png&opacity=40
 ### Material Theming
-
+- Większe możliwości brandowania elementów Material Design |
+- Dodano możliwość ekspresji kształtu |
+- 
 
 ### Slices
 ![slices](https://developer.android.com/guide/slices/images/slices-landing-example-3.png)
