@@ -1,6 +1,7 @@
 # Google I/O 2018
 
 ### Omówienie nowości z zakresu developmentu oraz designu
+![io](https://storage.googleapis.com/io-2018.appspot.com/v1/hashtag.gif)
 ---
 ### Android Jetpack oraz AndroidX
 ![jetpack](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkXbAiokYlzUZ7JfGTs4zFc_bqx6MzxPe_KAbJHtxo_p9IUvk0)
