@@ -116,12 +116,12 @@
 
 ---?image=https://material.io/design/assets/1j52aydOeI2nYsCBrPRkYpbHQRffAyg0D/casestudies-reply-main.png&size=auto 75%&position=center
 ### Nowości w Material Design
-+++?image=https://material.io/design/assets/1331BmAsV6l543NIfc6_9cgbpQvVE4eel/casestudies-shrine-hero.png&opacity=40
++++?image=https://material.io/design/assets/1331BmAsV6l543NIfc6_9cgbpQvVE4eel/casestudies-shrine-hero.png&opacity=70&size=auto 80%
 ### Material Theming
 - Większe możliwości brandowania elementów Material Design |
 - Dodano możliwość ekspresji kształtu |
-- 
 
+---
 ### Slices
 ![slices](https://developer.android.com/guide/slices/images/slices-landing-example-3.png)
 +++ 
