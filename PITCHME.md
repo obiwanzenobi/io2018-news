@@ -114,6 +114,12 @@
 - Użytkownik może przewinąć listę w miejsce gdzie jeszcze nie ma danych i zostaną one automatycznie doładowane |
 - Zwalnia nas to z obowiązku wykorzystania widoków-loaderów |
 ---
+### Material Design 2.0
+![material](https://material.io/design/assets/1j52aydOeI2nYsCBrPRkYpbHQRffAyg0D/casestudies-reply-main.png)
++++
+### Material Theming
+
+
 ### Slices
 ![slices](https://developer.android.com/guide/slices/images/slices-landing-example-3.png)
 +++ 
