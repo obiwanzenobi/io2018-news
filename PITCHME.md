@@ -80,9 +80,8 @@
 - Gwarantuje wykonanie podczas określonych warunków startowych |
 - Nie narusza ograniczeń platformy dotyczących wykonywania zadań w tle |
 - Kompatybilnie wstecznie także z urządzeniami bez Google Play Services |
-- Pozwala na łączenie oraz grupowanie zadań |
+- Pozwala na łączenie oraz grupowanie zadań, a także określanie jednorazowego lub okresowego wywołania |
 - Umożliwia obserwowanie stanu wykonywania zadania (LiveData) |
-- Pozwala określić czy zależy nam na jednorazowym lub okresowym wywoływaniu |
 +++
 ### Przekazywanie parametrów pomiędzy zadaniami
 - Możliwe ustawienie parametrów wejściowych oraz wyjściowych w jednym łańcuchu |
@@ -116,12 +115,12 @@
 
 ---?image=https://material.io/design/assets/1j52aydOeI2nYsCBrPRkYpbHQRffAyg0D/casestudies-reply-main.png&size=auto 75%&position=center
 ### Nowości w Material Design
-+++?image=https://material.io/design/assets/1331BmAsV6l543NIfc6_9cgbpQvVE4eel/casestudies-shrine-hero.png&opacity=65&size=auto 80%
++++?image=https://material.io/design/assets/1331BmAsV6l543NIfc6_9cgbpQvVE4eel/casestudies-shrine-hero.png&opacity=65&size=auto 100%
 ### Material Theming
 - Większe możliwości brandowania elementów Material Design |
 - Dodano możliwość ekspresji kształtu |
 - Elementy udostępnione jako Material Theme Components (wcześniej Design Support Library) dla Web, Android, iOS oraz Flutter |
-+++?image=https://material.io/design/assets/10o5IbEbDt5axb8z8vwC-pJh6WyWTCgjT/masonry-crane.png&opacity=65&size=auto 80%
++++?image=https://material.io/design/assets/10o5IbEbDt5axb8z8vwC-pJh6WyWTCgjT/masonry-crane.png&opacity=65&size=auto 100%
 ### Nowe narzędzia
 - Zmodernizowana strona material.io |
 - Material Plugin do Sketch'a |
