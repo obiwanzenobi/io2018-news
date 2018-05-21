@@ -120,9 +120,12 @@
 ### Material Theming
 - Większe możliwości brandowania elementów Material Design |
 - Dodano możliwość ekspresji kształtu |
-- Elementy udostępnione jako Material Theme Components (wcześniej Design Support Library) |
+- Elementy udostępnione jako Material Theme Components (wcześniej Design Support Library) dla Web, Android, iOS oraz Flutter |
 +++?image=https://material.io/design/assets/10o5IbEbDt5axb8z8vwC-pJh6WyWTCgjT/masonry-crane.png&opacity=65&size=auto 80%
-
+### Nowe narzędzia
+- Zmodernizowana strona material.io |
+- Material Plugin do Sketch'a |
+- Gallery do dzielenia się designem (gallery.io)| 
 ---
 ### Slices
 ![slices](https://developer.android.com/guide/slices/images/slices-landing-example-3.png)
