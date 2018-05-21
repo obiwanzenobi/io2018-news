@@ -92,9 +92,9 @@
 ### Tagi oraz zadanie "Unikalne"
 - Istnieje możliwość przypisania jednego lub wiecej tagów podczas inicjalizacji |
 - Pozwala na określenie logiki postępowania w przypadku kolejnych zadań w obrębie jednego tagu: |
--- "KEEP" anuluje zadanie gdy inne z tą samą nazwą jeszcze się nie zakończyło. Użyteczne w synchronizacjach gdzie chcemy ograniczyć ilośc jednakowych zapytań itp.
--- "REPLACE" zastępuje aktualnie wykonywane zadanie z tą samą nazwą. Do zastosowania przy aktualizacjach satusów gdzie tylko ostatnia wartość ma znaczenie
--- "APPEND" ustawia zadania w kolejce z zachowaniem kolejności. (np. lista zakupów, playlista, itp.)
+- "KEEP" anuluje zadanie gdy inne z tą samą nazwą jeszcze się nie zakończyło. |
+- "REPLACE" zastępuje aktualnie wykonywane zadanie z tą samą nazwą. |
+- "APPEND" ustawia zadania w kolejce z zachowaniem kolejności. |
 
 +++
 ### Jednolite API zastępujące (oraz rozszerzające możliwości) :
@@ -116,10 +116,12 @@
 
 ---?image=https://material.io/design/assets/1j52aydOeI2nYsCBrPRkYpbHQRffAyg0D/casestudies-reply-main.png&size=auto 75%&position=center
 ### Nowości w Material Design
-+++?image=https://material.io/design/assets/1331BmAsV6l543NIfc6_9cgbpQvVE4eel/casestudies-shrine-hero.png&opacity=70&size=auto 80%
++++?image=https://material.io/design/assets/1331BmAsV6l543NIfc6_9cgbpQvVE4eel/casestudies-shrine-hero.png&opacity=65&size=auto 80%
 ### Material Theming
 - Większe możliwości brandowania elementów Material Design |
 - Dodano możliwość ekspresji kształtu |
+- Elementy udostępnione jako Material Theme Components (wcześniej Design Support Library) |
++++?image=https://material.io/design/assets/10o5IbEbDt5axb8z8vwC-pJh6WyWTCgjT/masonry-crane.png&opacity=65&size=auto 80%
 
 ---
 ### Slices
