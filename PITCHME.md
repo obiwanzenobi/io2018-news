@@ -179,6 +179,12 @@
 - Dodatkowe Helpery wpływające na rozmieszczenie widoków, ich zachowanie oraz animacje |
 - Motion Layout pozwoli na animacje z wykorzystaniem KeyFrame'ów |
 +++
+### D8 oraz R8
+- Szybsza kompilacja (takze inkrementacyjna) i poprawione debugowanie
+- Bardziej czytelne komunikaty błędów |
+- Optymalizacje pod Kotlin "
+- R8 wykorzystuje składnie (rule) ProGuarda. Rownocześnie może robić desugar.
++++
 ### Oraz
 - RecyclerView selection - zaznaczanie |
 - RecyclerView ListAdapter |
