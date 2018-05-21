@@ -121,11 +121,34 @@
 - Większe możliwości brandowania elementów Material Design |
 - Dodano możliwość ekspresji kształtu |
 - Elementy udostępnione jako Material Theme Components (wcześniej Design Support Library) dla Web, Android, iOS oraz Flutter |
-+++?image=https://material.io/design/assets/10o5IbEbDt5axb8z8vwC-pJh6WyWTCgjT/masonry-crane.png&opacity=65&size=auto 100%
++++?image=https://material.io/assets/1LfChVuVWhT-wkH9MQKc9Ugvoz9A-CMvh/tools-gallery-1x1-large.png&opacity=65&size=auto 100%
+
 ### Nowe narzędzia
 - Zmodernizowana strona material.io |
 - Material Plugin do Sketch'a |
-- Gallery do dzielenia się designem (gallery.io)| 
+- Gallery do dzielenia się designem (gallery.io)|
++++?image=https://material.io/design/assets/10o5IbEbDt5axb8z8vwC-pJh6WyWTCgjT/masonry-crane.png&opacity=65&size=auto 100%
+```xml
+<style name="Theme.MyApp" parent="Theme.AppCompat">
+
+  <!-- Original AppCompat attributes. -->
+  <item name="colorPrimary">@color/my_app_primary_color</item>
+  <item name="colorPrimaryDark">@color/my_app_primary_dark_color</item>
+  <item name="colorAccent">@color/my_app_accent_color</item>
+
+  <!-- New MaterialComponents attributes. -->
+  <item name="colorPrimaryLight">?attr/colorPrimary</item>
+  <item name="colorSecondary">?attr/colorPrimary</item>
+  <item name="colorSecondaryLight">?attr/colorPrimaryLight</item>
+  <item name="colorSecondaryDark">?attr/colorPrimaryDark</item>
+  <item name="scrimBackground">@color/mtrl_scrim_color</item>
+  <item name="snackbarButtonStyle">?attr/borderlessButtonStyle</item>
+
+</style>
+```
+@[3-6]
+@[8-14]
+
 ---
 ### Slices
 ![slices](https://developer.android.com/guide/slices/images/slices-landing-example-3.png)
