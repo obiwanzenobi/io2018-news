@@ -84,6 +84,34 @@
 - Pozwala na łączenie oraz grupowanie zadań, a także określanie jednorazowego lub okresowego wywołania |
 - Umożliwia obserwowanie stanu wykonywania zadania (LiveData) |
 +++
+```java
+OneTimeWorkRequest compressionWork =
+        new OneTimeWorkRequest.Builder(CompressWorker.class)
+    .build();
+WorkManager.getInstance().enqueue(compressionWork);
+
+WorkManager.getInstance().getStatusById(compressionWork.getId())
+    .observe(lifecycleOwner, workStatus -> {
+        // Do something with the status
+        if (workStatus != null && workStatus.getState().isFinished())
+        { ... }
+    });
+    
+Constraints myConstraints = new Constraints.Builder()
+    .setRequiresDeviceIdle(true)
+    .setRequiresCharging(true) 
+    .build();
+
+OneTimeWorkRequest compressionWork =
+                new OneTimeWorkRequest.Builder(CompressWorker.class)
+     .setConstraints(myConstraints)
+     .build();
+```
+@[1-4]
+@[6-12]
+@[14-17]
+@[19-23]
++++
 ### Przekazywanie parametrów pomiędzy zadaniami
 - Możliwe ustawienie parametrów wejściowych oraz wyjściowych w jednym łańcuchu |
 - Dane są przekazywane w formie mapy gdzie kluczem jest wartość tekstowa a wartościami typy proste, tablice oraz łańcuchy znaków |
@@ -95,7 +123,6 @@
 - "KEEP" anuluje zadanie gdy inne z tą samą nazwą jeszcze się nie zakończyło. |
 - "REPLACE" zastępuje aktualnie wykonywane zadanie z tą samą nazwą. |
 - "APPEND" ustawia zadania w kolejce z zachowaniem kolejności. |
-
 +++
 ### Jednolite API zastępujące (oraz rozszerzające możliwości) :
 - JobScheduler |
