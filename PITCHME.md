@@ -29,9 +29,9 @@
 - Testowanie nawigacji |
 - Transakcje fragmentów |
 - Animacje |
-+++
++++?image=/images/navGraphImg.png&size=auto 70%
 ### Graficzna wizualizacja nawigacji
-![navGraph](/images/navGraphImg.png)
+
 +++
 ### Code behind
 ```xml
@@ -182,7 +182,7 @@
 - RecyclerView selection - zaznaczanie |
 - RecyclerView ListAdapter |
 - androidx.webkit.* wraz z Safe Browsing (Webview) |
-- Zbiór kotlin extensions dla kodu platformowego Android KTX
+- Zbiór kotlin extensions dla kodu platformowego Android KTX |
 ---
 ## Bonus
 ```kotlin
