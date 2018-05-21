@@ -127,7 +127,7 @@
 - Zmodernizowana strona material.io |
 - Material Plugin do Sketch'a |
 - Gallery do dzielenia się designem (gallery.io)|
-+++?image=https://material.io/design/assets/10o5IbEbDt5axb8z8vwC-pJh6WyWTCgjT/masonry-crane.png&opacity=65&size=auto 100%
++++?image=https://material.io/design/assets/10o5IbEbDt5axb8z8vwC-pJh6WyWTCgjT/masonry-crane.png&opacity=80&size=auto 100%
 ```xml
 <style name="Theme.MyApp" parent="Theme.AppCompat">
 
@@ -146,8 +146,6 @@
 
 </style>
 ```
-@[3-6]
-@[8-14]
 
 ---
 ### Slices
