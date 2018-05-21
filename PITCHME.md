@@ -114,7 +114,7 @@
 - Użytkownik może przewinąć listę w miejsce gdzie jeszcze nie ma danych i zostaną one automatycznie doładowane |
 - Zwalnia nas to z obowiązku wykorzystania widoków-loaderów |
 
----?image=https://material.io/design/assets/1j52aydOeI2nYsCBrPRkYpbHQRffAyg0D/casestudies-reply-main.png&size=auto 75%&position=center&color=#CCDAE7
+---?image=https://material.io/design/assets/1j52aydOeI2nYsCBrPRkYpbHQRffAyg0D/casestudies-reply-main.png&size=auto 75%&position=center
 ### Material Design 2.0
 
 +++
