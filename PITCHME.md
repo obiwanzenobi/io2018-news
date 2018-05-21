@@ -171,6 +171,13 @@
 - Wydzielenie cyklu życia widoku fragmentu |
 - ! |
 +++
+### Constraint Layout 1.1 oraz 2.0
+- Wersja 1.1 jest dostępna w wersji stable |
+- Oferuje Bariery, Procentowe wartości szerokości i długości, Zależności kątowe (na okręgu), Grupy |
+- Wersja 2.0 nie jest jeszcze oficjalnie dostępna |
+- Dodatkowe Helpery wpływające na rozmieszczenie widoków, ich zachowanie oraz animacje |
+- Motion Layout pozwoli na animacje z wykorzystaniem KeyFrame'ów |
++++
 ### Oraz
 - RecyclerView selection - zaznaczanie |
 - RecyclerView ListAdapter |
