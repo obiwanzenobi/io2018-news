@@ -106,11 +106,18 @@ OneTimeWorkRequest compressionWork =
                 new OneTimeWorkRequest.Builder(CompressWorker.class)
      .setConstraints(myConstraints)
      .build();
+     
+WorkManager.getInstance()
+    .beginWith(workA)
+    .then(workB)
+    .then(workC)
+    .enqueue();
 ```
 @[1-4]
 @[6-12]
 @[13-17]
 @[18-23]
+@[25-29]
 +++
 ### Przekazywanie parametrów pomiędzy zadaniami
 - Możliwe ustawienie parametrów wejściowych oraz wyjściowych w jednym łańcuchu |
@@ -238,6 +245,7 @@ OneTimeWorkRequest compressionWork =
 - RecyclerView ListAdapter |
 - androidx.webkit.* wraz z Safe Browsing (Webview) |
 - Zbiór kotlin extensions dla kodu platformowego Android KTX |
+- Cloud device profile |
 ---
 ## Bonus
 ```kotlin
