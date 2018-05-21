@@ -109,8 +109,8 @@ OneTimeWorkRequest compressionWork =
 ```
 @[1-4]
 @[6-12]
-@[14-17]
-@[19-23]
+@[13-17]
+@[18-23]
 +++
 ### Przekazywanie parametrów pomiędzy zadaniami
 - Możliwe ustawienie parametrów wejściowych oraz wyjściowych w jednym łańcuchu |
