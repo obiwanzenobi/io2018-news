@@ -116,8 +116,8 @@ WorkManager.getInstance()
 @[1-4]
 @[6-12]
 @[13-17]
-@[18-23]
-@[25-29]
+@[18-22]
+@[23-29]
 +++
 ### Przekazywanie parametrów pomiędzy zadaniami
 - Możliwe ustawienie parametrów wejściowych oraz wyjściowych w jednym łańcuchu |
