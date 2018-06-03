@@ -160,7 +160,7 @@ WorkManager.getInstance()
 ### Nowe narzędzia
 - Zmodernizowana strona material.io |
 - Material Plugin do Sketch'a |
-- Gallery do dzielenia się designem (gallery.io)|
+- Gallery do dzielenia się designem (gallery.io), Wspolpracuje z Androidem jak i iOS. Posiada tez apke mobiln|
 +++?image=https://material.io/design/assets/10o5IbEbDt5axb8z8vwC-pJh6WyWTCgjT/masonry-crane.png&opacity=80&size=auto 100%
 ```xml
 <style name="Theme.MyApp" parent="Theme.AppCompat">
@@ -210,6 +210,23 @@ WorkManager.getInstance()
 - Używa Firebase |
 - Przetwarzanie w chmurze jest płatne (w przeciwieństwie do tego na urzadzeniu) |
 - Nie wszystkie opcje dostępne są offline |
+---
+### Testy
+
++++
+### Write once, run everywhere.
+- AndroidJUnit runner. |
+- Test rules i Android Data builders, (Given) |
+- Espresso |
+- Fluent assertions |
++++
+### Project Nitrogen
+- Nowy test runner |
+- Bedzie zintegrowany z Android Studio |
+- Umozliwi izolacje i orkestryzacje testow |
+- Dostosowywanie raportu wyjsciowego |
+- Integracja z Firebase Test Lab, Goooogle Cloud, Robolectric oraz urzadzeniami |
+
 ---
 ### Co jeszcze?
 ![magic1](https://betanews.com/wp-content/uploads/2018/05/android-jetpack.jpg)
