@@ -268,6 +268,7 @@ WorkManager.getInstance()
 - Zbiór kotlin extensions dla kodu platformowego Android KTX |
 - Cloud device profile |
 - AAPT2 |
+- Incremental annotation processor InCAP - wymaga ingerencji developerow |
 ---
 ## Bonus
 ```kotlin
