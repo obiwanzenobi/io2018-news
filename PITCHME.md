@@ -267,6 +267,7 @@ WorkManager.getInstance()
 - androidx.webkit.* wraz z Safe Browsing (Webview) |
 - Zbiór kotlin extensions dla kodu platformowego Android KTX |
 - Cloud device profile |
+- AAPT2 |
 ---
 ## Bonus
 ```kotlin
