@@ -243,6 +243,10 @@ WorkManager.getInstance()
 ### Lifecycle
 - Wydzielenie cyklu życia widoku fragmentu |
 - ! |
++++ AR
+- Sceneform API |
+- Augmented images |
+- Cloud anchors |
 +++
 ### Constraint Layout 1.1 oraz 2.0
 - Wersja 1.1 jest dostępna w wersji stable |
